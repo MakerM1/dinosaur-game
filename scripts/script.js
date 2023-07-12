@@ -40,7 +40,7 @@ var checkDead = setInterval(function() {
     var blockLeft3 = parseInt(window.getComputedStyle(block3).getPropertyValue('left'))
     var blockLeft4 = parseInt(window.getComputedStyle(block4).getPropertyValue('left'))
 
-    if(blockLeft < 60 && blockLeft > 0 && characterTop >= 130) {
+    if(blockLeft < 55 && blockLeft > 0 && characterTop >= 130) {
         block.style.animation = 'none'
         block.style.display = 'none'
         characterSprite.classList.remove('alive')
@@ -55,7 +55,7 @@ var checkDead = setInterval(function() {
 
         console.log('block1')
 
-    } else if (blockLeft2 < 60 && blockLeft2 > 0 && characterTop >= 130) {
+    } else if (blockLeft2 < 55 && blockLeft2 > 0 && characterTop >= 130) {
         block.style.animation = 'none'
         block.style.display = 'none'
         characterSprite.classList.remove('alive')
@@ -68,7 +68,7 @@ var checkDead = setInterval(function() {
         }, 20)
         console.log('block2')
         location.reload()
-    } else if (blockLeft3 < 60 && blockLeft3 > 0 && characterTop >= 130) {
+    } else if (blockLeft3 < 55 && blockLeft3 > 0 && characterTop >= 130) {
         block.style.animation = 'none'
         block.style.display = 'none'
         characterSprite.classList.remove('alive')
@@ -81,7 +81,7 @@ var checkDead = setInterval(function() {
         }, 20)
         console.log('block3')
         location.reload()
-    } else if (blockLeft4 < 60 && blockLeft4 > 0 && characterTop >= 130) {
+    } else if (blockLeft4 < 55 && blockLeft4 > 0 && characterTop >= 130) {
         block.style.animation = 'none'
         block.style.display = 'none'
         characterSprite.classList.remove('alive')
@@ -110,6 +110,36 @@ function updateScore() {
 }
 
 updateScore()
+
+function difficulty1() {
+    let number = 0
+    setInterval(function() {
+        number++
+        if (number >= 500) {
+            block.style.animationDuration = '10s'
+            block2.style.animationDuration = '9s'
+            block3.style.animationDuration = '8s'
+            block4.style.animationDuration = '14s'
+        }
+    }, 70)
+}
+
+difficulty1()
+
+function difficulty2() {
+    let number = 0
+    setInterval(function() {
+        number++
+        if (number >= 900) {
+                block.style.animationDuration = '8s'
+                block2.style.animationDuration = '7s'
+                block3.style.animationDuration = '6s'
+                block4.style.animationDuration = '10s'
+        }
+    }, 70)
+}
+
+difficulty2()
 
 
 // function night() {

@@ -227,8 +227,8 @@ body {
   display: inline-block;
   top: 170px;
   left: 600px;
-  -webkit-animation: block 8s infinite linear;
-          animation: block 8s infinite linear;
+  -webkit-animation: block 13s infinite linear;
+          animation: block 13s infinite linear;
 }
 .block img {
   width: 20px;
@@ -236,7 +236,7 @@ body {
 }
 @-webkit-keyframes block {
   0% {
-    left: 1500px;
+    left: 2000px;
   }
   100% {
     left: -1000px;
@@ -244,7 +244,7 @@ body {
 }
 @keyframes block {
   0% {
-    left: 1500px;
+    left: 2000px;
   }
   100% {
     left: -1000px;
@@ -257,9 +257,9 @@ body {
   position: absolute;
   display: inline-block;
   top: 170px;
-  left: 900px;
-  -webkit-animation: block1 9s infinite linear;
-          animation: block1 9s infinite linear;
+  left: 1500px;
+  -webkit-animation: block1 12s infinite linear;
+          animation: block1 12s infinite linear;
 }
 .block2 img {
   width: 20px;
@@ -267,7 +267,7 @@ body {
 }
 @-webkit-keyframes block1 {
   0% {
-    left: 1600px;
+    left: 1900px;
   }
   100% {
     left: -1100px;
@@ -275,7 +275,7 @@ body {
 }
 @keyframes block1 {
   0% {
-    left: 1600px;
+    left: 1900px;
   }
   100% {
     left: -1100px;
@@ -288,9 +288,9 @@ body {
   position: absolute;
   display: inline-block;
   top: 170px;
-  left: 500px;
-  -webkit-animation: block2 5s infinite linear;
-          animation: block2 5s infinite linear;
+  left: 900px;
+  -webkit-animation: block2 11s infinite linear;
+          animation: block2 11s infinite linear;
 }
 .block3 img {
   width: 20px;
@@ -298,7 +298,7 @@ body {
 }
 @-webkit-keyframes block2 {
   0% {
-    left: 1300px;
+    left: 1400px;
   }
   100% {
     left: -1000px;
@@ -306,7 +306,7 @@ body {
 }
 @keyframes block2 {
   0% {
-    left: 1300px;
+    left: 1400px;
   }
   100% {
     left: -1000px;
@@ -320,8 +320,8 @@ body {
   display: inline-block;
   top: 170px;
   left: 1000px;
-  -webkit-animation: block3 10s infinite linear;
-          animation: block3 10s infinite linear;
+  -webkit-animation: block3 15s infinite linear;
+          animation: block3 15s infinite linear;
 }
 .block4 img {
   width: 20px;
@@ -329,7 +329,7 @@ body {
 }
 @-webkit-keyframes block3 {
   0% {
-    left: 1700px;
+    left: 3000px;
   }
   100% {
     left: -1200px;
@@ -337,7 +337,7 @@ body {
 }
 @keyframes block3 {
   0% {
-    left: 1700px;
+    left: 3000px;
   }
   100% {
     left: -1200px;

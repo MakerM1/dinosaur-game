@@ -74,7 +74,7 @@ body {
     display: inline-block;
     top: 170px;
     left: 600px;
-    animation: block 8s infinite linear;
+    animation: block 13s infinite linear;
 
     img {
         width: 20px;
@@ -83,7 +83,7 @@ body {
 
     @keyframes block {
         0% {
-            left: 1500px;
+            left: 2000px;
         }
 
         100% {
@@ -98,8 +98,8 @@ body {
     position: absolute;
     display: inline-block;
     top: 170px;
-    left: 900px;
-    animation: block1 9s infinite linear;
+    left: 1500px;
+    animation: block1 12s infinite linear;
 
     img {
         width: 20px;
@@ -108,7 +108,7 @@ body {
 
     @keyframes block1 {
         0% {
-            left: 1600px;
+            left: 1900px;
         }
 
         100% {
@@ -123,8 +123,8 @@ body {
     position: absolute;
     display: inline-block;
     top: 170px;
-    left: 500px;
-    animation: block2 5s infinite linear;
+    left: 900px;
+    animation: block2 11s infinite linear;
 
     img {
         width: 20px;
@@ -133,7 +133,7 @@ body {
 
     @keyframes block2 {
         0% {
-            left: 1300px;
+            left: 1400px;
         }
 
         100% {
@@ -149,7 +149,7 @@ body {
     display: inline-block;
     top: 170px;
     left: 1000px;
-    animation: block3 10s infinite linear;
+    animation: block3 15s infinite linear;
 
     img {
         width: 20px;
@@ -158,7 +158,7 @@ body {
 
     @keyframes block3 {
         0% {
-            left: 1700px;
+            left: 3000px;
         }
 
         100% {
