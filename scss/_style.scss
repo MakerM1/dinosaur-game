@@ -1,0 +1,186 @@
+body {
+    overflow: hidden;
+    text-align: center;
+}
+
+.score {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'VT323', monospace;
+}
+
+.game {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 250px;
+    position: relative;
+    height: 200px;
+    border-bottom: 1px solid black;
+
+    @media (max-width: 500px) {
+        width: 400px;
+        overflow: hidden;
+        padding-bottom: 220px;
+    }
+
+    @media (max-width: 1281px) {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 220px;
+    }
+}
+
+.character {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    top: 150px;
+
+    .alive {
+        width: 100px;
+        height: 80px;
+        object-fit: cover;
+    }
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 90px;
+    }
+
+    70% {
+        top: 90px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+.block {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+    top: 170px;
+    left: 600px;
+    animation: block 8s infinite linear;
+
+    img {
+        width: 20px;
+        height: 50px;
+    }
+
+    @keyframes block {
+        0% {
+            left: 1500px;
+        }
+
+        100% {
+            left: -1000px;
+        }
+    }
+}
+
+.block2 {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+    top: 170px;
+    left: 900px;
+    animation: block1 9s infinite linear;
+
+    img {
+        width: 20px;
+        height: 50px;
+    }
+
+    @keyframes block1 {
+        0% {
+            left: 1600px;
+        }
+
+        100% {
+            left: -1100px;
+        }
+    }
+}
+
+.block3 {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+    top: 170px;
+    left: 500px;
+    animation: block2 5s infinite linear;
+
+    img {
+        width: 20px;
+        height: 50px;
+    }
+
+    @keyframes block2 {
+        0% {
+            left: 1300px;
+        }
+
+        100% {
+            left: -1000px;
+        }
+    }
+}
+
+.block4 {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+    top: 170px;
+    left: 1000px;
+    animation: block3 10s infinite linear;
+
+    img {
+        width: 20px;
+        height: 50px;
+    }
+
+    @keyframes block3 {
+        0% {
+            left: 1700px;
+        }
+
+        100% {
+            left: -1200px;
+        }
+    }
+}
+
+.dead-sprite {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    position: absolute;
+    top: 165px;
+    left: 25px;
+    z-index: 10;
+}
+
+.alive-visible {
+    display: none;
+}
+
+.visible {
+    display: none;
+}

@@ -1,0 +1,364 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  font-family: "VT323", monospace;
+}
+
+.game {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 250px;
+  position: relative;
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .game {
+    width: 400px;
+    overflow: hidden;
+    padding-bottom: 220px;
+  }
+}
+@media (max-width: 1281px) {
+  .game {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 220px;
+  }
+}
+
+.character {
+  width: 100px;
+  height: 80px;
+  position: relative;
+  top: 150px;
+}
+.character .alive {
+  width: 100px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.animate {
+  -webkit-animation: jump 500ms;
+          animation: jump 500ms;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 90px;
+  }
+  70% {
+    top: 90px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 90px;
+  }
+  70% {
+    top: 90px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.block {
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  top: 170px;
+  left: 600px;
+  -webkit-animation: block 8s infinite linear;
+          animation: block 8s infinite linear;
+}
+.block img {
+  width: 20px;
+  height: 50px;
+}
+@-webkit-keyframes block {
+  0% {
+    left: 1500px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+@keyframes block {
+  0% {
+    left: 1500px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+
+.block2 {
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  top: 170px;
+  left: 900px;
+  -webkit-animation: block1 9s infinite linear;
+          animation: block1 9s infinite linear;
+}
+.block2 img {
+  width: 20px;
+  height: 50px;
+}
+@-webkit-keyframes block1 {
+  0% {
+    left: 1600px;
+  }
+  100% {
+    left: -1100px;
+  }
+}
+@keyframes block1 {
+  0% {
+    left: 1600px;
+  }
+  100% {
+    left: -1100px;
+  }
+}
+
+.block3 {
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  top: 170px;
+  left: 500px;
+  -webkit-animation: block2 5s infinite linear;
+          animation: block2 5s infinite linear;
+}
+.block3 img {
+  width: 20px;
+  height: 50px;
+}
+@-webkit-keyframes block2 {
+  0% {
+    left: 1300px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+@keyframes block2 {
+  0% {
+    left: 1300px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+
+.block4 {
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  top: 170px;
+  left: 1000px;
+  -webkit-animation: block3 10s infinite linear;
+          animation: block3 10s infinite linear;
+}
+.block4 img {
+  width: 20px;
+  height: 50px;
+}
+@-webkit-keyframes block3 {
+  0% {
+    left: 1700px;
+  }
+  100% {
+    left: -1200px;
+  }
+}
+@keyframes block3 {
+  0% {
+    left: 1700px;
+  }
+  100% {
+    left: -1200px;
+  }
+}
+
+.dead-sprite {
+  width: 55px;
+  height: 55px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 165px;
+  left: 25px;
+  z-index: 10;
+}
+
+.alive-visible {
+  display: none;
+}
+
+.visible {
+  display: none;
+}/*# sourceMappingURL=global.css.map */

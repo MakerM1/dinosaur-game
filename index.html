@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ; onclick="jump();">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinosaur Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body onkeydown="jumpButton()">
+    <div class="score"></div>
+    <div class="game">
+      <div class="character">
+        <img
+          src="images/output-onlinegiftools.gif"
+          alt=""
+          class="alive js-sprite"
+          id="alive"
+        />
+      </div>
+      <img src="images/dead.png" alt="" class="visible js-dead" id="dead" />
+      <div class="block" id="block">
+        <img src="images/cactus1.png" alt="" />
+      </div>
+      <div class="block2" id="block2">
+        <img src="images/cactus1.png" alt="" />
+      </div>
+      <div class="block3" id="block3">
+        <img src="images/cactus1.png" alt="" />
+      </div>
+      <div class="block4" id="block4">
+        <img src="images/cactus1.png" alt="" />
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
