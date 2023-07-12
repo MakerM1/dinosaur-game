@@ -10,6 +10,8 @@ let death = new Audio('../audio/die.mp3')
 let intervalID;
 const characterSprite = document.getElementById('alive')
 const characterDead = document.getElementById('dead')
+const body = document.getElementById('body')
+const game = document.getElementById('game')
 
 function jump() {
     if (character.classList != 'animate') {
@@ -110,3 +112,15 @@ function updateScore() {
 updateScore()
 
 
+// function night() {
+//     let number = 600
+//     setInterval(function() {
+//         number++
+//         if (number >= 700 && number <= 1000) {
+//             body.style.backgroundColor = 'rgb(15, 15, 15)'
+//             game.style.borderBottomColor = ('white')
+//         }
+//     }, 70)
+// }
+
+// night()
